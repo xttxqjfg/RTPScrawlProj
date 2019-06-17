@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>userid</key>
+		<string>1000001</string>
+		<key>username</key>
+		<string>学员1</string>
+		<key>token</key>
+		<string>XWazzEa/IcOTos9AE70HCq3x4b7OjTJ325usaUm0I/UU/H3rL+12bxppwq5kpM4vmTEAtbBzkyJPKtQESITWJW9d9T62xIAG</string>
+	</dict>
+	<dict>
+		<key>userid</key>
+		<string>1000002</string>
+		<key>username</key>
+		<string>学员2</string>
+		<key>token</key>
+		<string>SQ6tHTLFipQT5t9WRnF8J63x4b7OjTJ325usaUm0I/UU/H3rL+12b+nQL+qViUdHj9yMAGQcJRyR4P/26Uh1H29d9T62xIAG</string>
+	</dict>
+	<dict>
+		<key>userid</key>
+		<string>1000003</string>
+		<key>username</key>
+		<string>学员3</string>
+		<key>token</key>
+		<string>lWR9fhy/j9b2XUhyzU6Kvc6tTbFXbHwrcnugEqaSEWKHAwiEne0QhKk+k7V0CHBWBTMbwSyLAI19J4F2vDSx2oCX+YOuU/ni</string>
+	</dict>
+	<dict>
+		<key>userid</key>
+		<string>1000004</string>
+		<key>username</key>
+		<string>学员4</string>
+		<key>token</key>
+		<string>0ng/6PlEJjK1y4/BpT7OHK3x4b7OjTJ325usaUm0I/UU/H3rL+12b/CzC034i2Gn6Ls5dqYj8tOxOSgPA49K5W9d9T62xIAG</string>
+	</dict>
+	<dict>
+		<key>userid</key>
+		<string>1000005</string>
+		<key>username</key>
+		<string>学员5</string>
+		<key>token</key>
+		<string>btW3xnvZogS8iud+Hi0MsK3x4b7OjTJ325usaUm0I/UU/H3rL+12b0wArqajGdTnTSHzE3a3Jb8xUD4lorLum29d9T62xIAG</string>
+	</dict>
+	<dict>
+		<key>userid</key>
+		<string>2000000000001</string>
+		<key>username</key>
+		<string>测试群组1</string>
+		<key>token</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
