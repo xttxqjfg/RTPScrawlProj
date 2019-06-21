@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RTPMessageDefine.h"
+#import "RTPMessageContent.h"
+#import "RTPMessage.h"
 
 @interface RTPMessageHandle : NSObject
 
@@ -18,12 +21,22 @@
 + (RTPMessageHandle *) shareInstance;
 
 
-- (void)addScrawlToMessageQ:(NSDictionary *)message;
+/**
+ 发送消息
 
+ @param messageType 消息类型
+ @param content 消息内容
+ */
+- (void)sendMessage:(RTPMessageType)messageType
+                   content:(RTPMessageContent *)content;
 
 /**
- 清空消息队列
+ 接收到消息
+
+ @param messageType 消息类型
+ @param content 消息内容
  */
-- (void)cleanMessageQ;
+- (void)reciveMessage:(RTPMessageType)messageType
+            content:(RTPMessageContent *)content;
 
 @end

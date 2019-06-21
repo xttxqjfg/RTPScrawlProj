@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1F020122BC7CD200C1E671 /* RTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020022BC7CD200C1E671 /* RTPMessage.m */; };
+		1A1F020522BC84E900C1E671 /* RTPMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020422BC84E900C1E671 /* RTPMessageContent.m */; };
+		1A1F020822BC865A00C1E671 /* RTPTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020722BC865A00C1E671 /* RTPTextMessage.m */; };
+		1A1F020B22BC866F00C1E671 /* RTPPathMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020A22BC866F00C1E671 /* RTPPathMessage.m */; };
+		1A1F020E22BCD23100C1E671 /* RTPPaintPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020D22BCD23100C1E671 /* RTPPaintPath.m */; };
 		1A267F9F22B4D98B00EE2D6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A267F9E22B4D98B00EE2D6B /* AppDelegate.m */; };
 		1A267FA222B4D98B00EE2D6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A267FA122B4D98B00EE2D6B /* ViewController.m */; };
 		1A267FA522B4D98B00EE2D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A267FA322B4D98B00EE2D6B /* Main.storyboard */; };
@@ -21,6 +26,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A1F01FF22BC7CD200C1E671 /* RTPMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPMessage.h; sourceTree = "<group>"; };
+		1A1F020022BC7CD200C1E671 /* RTPMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPMessage.m; sourceTree = "<group>"; };
+		1A1F020222BC7E7400C1E671 /* RTPMessageDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPMessageDefine.h; sourceTree = "<group>"; };
+		1A1F020322BC84E900C1E671 /* RTPMessageContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPMessageContent.h; sourceTree = "<group>"; };
+		1A1F020422BC84E900C1E671 /* RTPMessageContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPMessageContent.m; sourceTree = "<group>"; };
+		1A1F020622BC865A00C1E671 /* RTPTextMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPTextMessage.h; sourceTree = "<group>"; };
+		1A1F020722BC865A00C1E671 /* RTPTextMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPTextMessage.m; sourceTree = "<group>"; };
+		1A1F020922BC866F00C1E671 /* RTPPathMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPPathMessage.h; sourceTree = "<group>"; };
+		1A1F020A22BC866F00C1E671 /* RTPPathMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPPathMessage.m; sourceTree = "<group>"; };
+		1A1F020C22BCD23100C1E671 /* RTPPaintPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPPaintPath.h; sourceTree = "<group>"; };
+		1A1F020D22BCD23100C1E671 /* RTPPaintPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPPaintPath.m; sourceTree = "<group>"; };
 		1A267F9A22B4D98B00EE2D6B /* RTPScrawlProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTPScrawlProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A267F9D22B4D98B00EE2D6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A267F9E22B4D98B00EE2D6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +125,17 @@
 				1AF0548D22B73ECF009D4704 /* RTPScrawlView.m */,
 				1AF0549222B743AF009D4704 /* RTPMessageHandle.h */,
 				1AF0549322B743AF009D4704 /* RTPMessageHandle.m */,
+				1A1F01FF22BC7CD200C1E671 /* RTPMessage.h */,
+				1A1F020022BC7CD200C1E671 /* RTPMessage.m */,
+				1A1F020222BC7E7400C1E671 /* RTPMessageDefine.h */,
+				1A1F020322BC84E900C1E671 /* RTPMessageContent.h */,
+				1A1F020422BC84E900C1E671 /* RTPMessageContent.m */,
+				1A1F020622BC865A00C1E671 /* RTPTextMessage.h */,
+				1A1F020722BC865A00C1E671 /* RTPTextMessage.m */,
+				1A1F020922BC866F00C1E671 /* RTPPathMessage.h */,
+				1A1F020A22BC866F00C1E671 /* RTPPathMessage.m */,
+				1A1F020C22BCD23100C1E671 /* RTPPaintPath.h */,
+				1A1F020D22BCD23100C1E671 /* RTPPaintPath.m */,
 			);
 			path = RTPScrawl;
 			sourceTree = "<group>";
@@ -245,7 +272,12 @@
 				1A267FAD22B4D98C00EE2D6B /* main.m in Sources */,
 				1AF0549422B743AF009D4704 /* RTPMessageHandle.m in Sources */,
 				1A267F9F22B4D98B00EE2D6B /* AppDelegate.m in Sources */,
+				1A1F020522BC84E900C1E671 /* RTPMessageContent.m in Sources */,
+				1A1F020822BC865A00C1E671 /* RTPTextMessage.m in Sources */,
+				1A1F020122BC7CD200C1E671 /* RTPMessage.m in Sources */,
+				1A1F020B22BC866F00C1E671 /* RTPPathMessage.m in Sources */,
 				1AF0549122B73F10009D4704 /* RTPScrawlVC.m in Sources */,
+				1A1F020E22BCD23100C1E671 /* RTPPaintPath.m in Sources */,
 				1AF0548E22B73ECF009D4704 /* RTPScrawlView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,17 +422,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66Q7X2DNE7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = K4VKJK5NA4;
 				INFOPLIST_FILE = RTPScrawlProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yb.RTPScrawlProj;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xrs.tcfudao.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "tcfudao-0325";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -411,17 +443,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66Q7X2DNE7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = K4VKJK5NA4;
 				INFOPLIST_FILE = RTPScrawlProj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yb.RTPScrawlProj;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xrs.tcfudao.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "tcfudao-0325";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

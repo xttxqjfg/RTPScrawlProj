@@ -10,4 +10,14 @@
 
 @interface RTPScrawlView : UIView
 
+/**
+ *  清除所有轨迹
+ */
+- (void)clearAllPaint;
+
+/**
+ *  撤销一步
+ */
+- (void)undo;
+
 @end
