@@ -13,6 +13,9 @@
 
 @property (nonatomic, strong) RTPScrawlView *scrawlView;
 
+
+@property (nonatomic, strong) UIButton *undoBtn;
+
 @end
 
 @implementation RTPScrawlVC
@@ -23,16 +26,29 @@
     
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
-    [self.scrawlView addObserver:self forKeyPath:@"linesArr" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
-    
     [self.view addSubview:self.scrawlView];
+    [self.view addSubview:self.undoBtn];
+}
+
+- (void)undoBtnClicked:(UIButton *)sender {
+    [self.scrawlView undo];
 }
 
 - (RTPScrawlView *)scrawlView {
     if (!_scrawlView) {
-        _scrawlView = [[RTPScrawlView alloc] initWithFrame:self.view.bounds];
+        _scrawlView = [[RTPScrawlView alloc] initWithFrame:CGRectMake(50.0, 50.0, 700.0, 700.0)];
         _scrawlView.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
     }
     return _scrawlView;
 }
+
+- (UIButton *)undoBtn {
+    if (!_undoBtn) {
+        _undoBtn = [[UIButton alloc]initWithFrame:CGRectMake(900, 50, 100, 50)];
+        _undoBtn.backgroundColor = [UIColor redColor];
+        [_undoBtn addTarget:self action:@selector(undoBtnClicked:) forControlEvents:(UIControlEventTouchUpInside)];
+    }
+    return _undoBtn;
+}
+
 @end

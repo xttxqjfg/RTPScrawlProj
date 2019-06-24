@@ -48,18 +48,6 @@
     return [touch locationInView:self];
 }
 
-
-/**
- 只允许一个手指绘画
- */
-- (BOOL)touchesShouldBegin:(NSSet *)touches withEvent:(UIEvent *)event inContentView:(UIView *)view {
-    if ([event allTouches].count == 1) {
-        return YES;
-    }
-    return NO;
-}
-
-
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     CGPoint startP = [self pointWithTouches:touches];
     
@@ -87,19 +75,17 @@
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     // 获取移动点
     CGPoint moveP = [self pointWithTouches:touches];
-    if ([event allTouches].count > 1) {
-        [self.superview touchesMoved:touches withEvent:event];
-    }
-    else if ([event allTouches].count == 1) {
-        [_path addLineToPoint:moveP];
-        _slayer.path = _path.CGPath;
+    if ([event allTouches].count == 1) {
+        //超出绘画区域则直接跳过
+        if(CGRectContainsPoint(self.bounds, moveP)) {
+            [_path addLineToPoint:moveP];
+            _slayer.path = _path.CGPath;
+        }
     }
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if ([event allTouches].count > 1) {
-        [self.superview touchesMoved:touches withEvent:event];
-    }
+    NSLog(@"---- touchesEnded --- %@",self.path);
 }
 
 /**
@@ -108,6 +94,7 @@
 - (void)drawLine {
     [self.layer addSublayer:self.linesArr.lastObject];
 }
+
 /**
  *  清屏
  */
