@@ -8,6 +8,9 @@
 
 #import "RTPMessageHandle.h"
 
+#import <RongIMKit/RongIMKit.h>
+
+
 @interface RTPMessageHandle()
 
 /**
@@ -29,7 +32,34 @@
     return instance;
 }
 
-- (void)addScrawlToMessageQ:(NSDictionary *)message {
+/**
+ 发送消息
+ 
+ @param messageType 消息类型
+ @param content 消息内容
+ */
+- (void)sendMessage:(RTPMessageType)messageType
+            content:(NSString *)content {
+    
+    // 构建消息的内容，这里以文本消息为例。
+    RCTextMessage *pathMessage = [RCTextMessage messageWithContent:content];
+    
+    // 调用RCIMClient的sendMessage方法进行发送，结果会通过回调进行反馈。
+    [[RCIMClient sharedRCIMClient] sendMessage:ConversationType_GROUP targetId:@"2000000000001" content:pathMessage pushContent:nil pushData:nil success:^(long messageId) {
+        NSLog(@"发送成功。当前消息ID：%ld", messageId);
+    } error:^(RCErrorCode nErrorCode, long messageId) {
+        NSLog(@"发送失败。消息ID：%ld， 错误码：%ld", messageId, (long)nErrorCode);
+    }];
+}
+
+/**
+ 接收到消息
+ 
+ @param messageType 消息类型
+ @param content 消息内容
+ */
+- (void)reciveMessage:(RTPMessageType)messageType
+              content:(NSString *)content {
     
 }
 

@@ -5,6 +5,6 @@ inhibit_all_warnings!
 target "RTPScrawlProj" do
     
 pod 'Masonry','~> 1.1.0'
-pod 'RongCloudIM/IMLib', '~> 2.9.7'
+pod 'RongCloudIM/IMKit', '~> 2.9.7'
 
 end

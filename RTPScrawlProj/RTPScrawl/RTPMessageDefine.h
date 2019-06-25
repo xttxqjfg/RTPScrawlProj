@@ -17,32 +17,32 @@ typedef NS_ENUM(NSUInteger, RTPMessageType) {
     /*!
      轨迹类型
      */
-    RTPMessageType_PATH = 1,
+    RTPMessageType_PATH = 1000,
     
     /*!
      图片类型
      */
-    RTPMessageType_PIC = 2,
+    RTPMessageType_PIC = 2000,
     
     /*!
      表情类型
      */
-    RTPMessageType_EMOJI = 3,
+    RTPMessageType_EMOJI = 3000,
     
     /*!
      语音类型
      */
-    RTPMessageType_VOICE = 4,
+    RTPMessageType_VOICE = 4000,
     
     /*!
      文本类型
      */
-    RTPMessageType_TEXT = 5,
+    RTPMessageType_TEXT = 5000,
     
     /*!
      无效类型
      */
-    RTPMessageType_UNKNOW
+    RTPMessageType_UNKNOW = 9999
     
 };
 

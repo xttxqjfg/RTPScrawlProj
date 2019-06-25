@@ -6,29 +6,31 @@
 //  Copyright © 2019 易博. All rights reserved.
 //
 
-#import "RTPMessageContent.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+/*!
+ 轨迹消息的类型名
+ */
+#define RTPPathMessageTypeIdentifier @"RTP:PathMsg"
 
 /*!
  涂鸦轨迹消息类
  */
-@interface RTPPathMessage : RTPMessageContent
+@interface RTPPathMessage : NSObject
 
 /*!
- 轨迹消息的内容
+ 涂鸦轨迹图层的大小
  */
-@property(nonatomic, copy) NSString *content;
-
-/*!
- 轨迹消息的附加信息
- */
-@property(nonatomic, copy) NSString *extra;
+@property(nonatomic, assign) CGSize layerSize;
 
 /*!
  初始化轨迹消息
  
- @param content 轨迹消息的内容
- @return        轨迹消息对象
+ @param pathArr 轨迹消息的内容
+ @param layerSize 画布大小
+ @return        轨迹消息json串
  */
-+ (instancetype)messageWithContent:(NSString *)content;
+- (NSString *)messageWithContent:(NSArray *)pathArr size:(CGSize)layerSize;
 
 @end

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A1F020122BC7CD200C1E671 /* RTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020022BC7CD200C1E671 /* RTPMessage.m */; };
-		1A1F020522BC84E900C1E671 /* RTPMessageContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020422BC84E900C1E671 /* RTPMessageContent.m */; };
-		1A1F020822BC865A00C1E671 /* RTPTextMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020722BC865A00C1E671 /* RTPTextMessage.m */; };
 		1A1F020B22BC866F00C1E671 /* RTPPathMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020A22BC866F00C1E671 /* RTPPathMessage.m */; };
 		1A1F020E22BCD23100C1E671 /* RTPPaintPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F020D22BCD23100C1E671 /* RTPPaintPath.m */; };
 		1A267F9F22B4D98B00EE2D6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A267F9E22B4D98B00EE2D6B /* AppDelegate.m */; };
@@ -18,6 +15,7 @@
 		1A267FA722B4D98C00EE2D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A267FA622B4D98C00EE2D6B /* Assets.xcassets */; };
 		1A267FAA22B4D98C00EE2D6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A267FA822B4D98C00EE2D6B /* LaunchScreen.storyboard */; };
 		1A267FAD22B4D98C00EE2D6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A267FAC22B4D98C00EE2D6B /* main.m */; };
+		1A519CFA22C1F32500AC13AB /* 20190625001.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A519CF922C1F32500AC13AB /* 20190625001.png */; };
 		1AF0548A22B7323C009D4704 /* RegisterUserList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AF0548922B7323C009D4704 /* RegisterUserList.plist */; };
 		1AF0548E22B73ECF009D4704 /* RTPScrawlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0548D22B73ECF009D4704 /* RTPScrawlView.m */; };
 		1AF0549122B73F10009D4704 /* RTPScrawlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0549022B73F10009D4704 /* RTPScrawlVC.m */; };
@@ -26,13 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A1F01FF22BC7CD200C1E671 /* RTPMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPMessage.h; sourceTree = "<group>"; };
-		1A1F020022BC7CD200C1E671 /* RTPMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPMessage.m; sourceTree = "<group>"; };
 		1A1F020222BC7E7400C1E671 /* RTPMessageDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPMessageDefine.h; sourceTree = "<group>"; };
-		1A1F020322BC84E900C1E671 /* RTPMessageContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPMessageContent.h; sourceTree = "<group>"; };
-		1A1F020422BC84E900C1E671 /* RTPMessageContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPMessageContent.m; sourceTree = "<group>"; };
-		1A1F020622BC865A00C1E671 /* RTPTextMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPTextMessage.h; sourceTree = "<group>"; };
-		1A1F020722BC865A00C1E671 /* RTPTextMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPTextMessage.m; sourceTree = "<group>"; };
 		1A1F020922BC866F00C1E671 /* RTPPathMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPPathMessage.h; sourceTree = "<group>"; };
 		1A1F020A22BC866F00C1E671 /* RTPPathMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPPathMessage.m; sourceTree = "<group>"; };
 		1A1F020C22BCD23100C1E671 /* RTPPaintPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPPaintPath.h; sourceTree = "<group>"; };
@@ -47,6 +39,7 @@
 		1A267FA922B4D98C00EE2D6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A267FAB22B4D98C00EE2D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A267FAC22B4D98C00EE2D6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A519CF922C1F32500AC13AB /* 20190625001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20190625001.png; sourceTree = "<group>"; };
 		1AF0548922B7323C009D4704 /* RegisterUserList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RegisterUserList.plist; sourceTree = "<group>"; };
 		1AF0548C22B73ECF009D4704 /* RTPScrawlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPScrawlView.h; sourceTree = "<group>"; };
 		1AF0548D22B73ECF009D4704 /* RTPScrawlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPScrawlView.m; sourceTree = "<group>"; };
@@ -108,6 +101,7 @@
 				1A267FA122B4D98B00EE2D6B /* ViewController.m */,
 				1AF0548F22B73F10009D4704 /* RTPScrawlVC.h */,
 				1AF0549022B73F10009D4704 /* RTPScrawlVC.m */,
+				1A519CF922C1F32500AC13AB /* 20190625001.png */,
 				1A267FA322B4D98B00EE2D6B /* Main.storyboard */,
 				1A267FA622B4D98C00EE2D6B /* Assets.xcassets */,
 				1A267FA822B4D98C00EE2D6B /* LaunchScreen.storyboard */,
@@ -123,15 +117,9 @@
 			children = (
 				1AF0548C22B73ECF009D4704 /* RTPScrawlView.h */,
 				1AF0548D22B73ECF009D4704 /* RTPScrawlView.m */,
+				1A1F020222BC7E7400C1E671 /* RTPMessageDefine.h */,
 				1AF0549222B743AF009D4704 /* RTPMessageHandle.h */,
 				1AF0549322B743AF009D4704 /* RTPMessageHandle.m */,
-				1A1F01FF22BC7CD200C1E671 /* RTPMessage.h */,
-				1A1F020022BC7CD200C1E671 /* RTPMessage.m */,
-				1A1F020222BC7E7400C1E671 /* RTPMessageDefine.h */,
-				1A1F020322BC84E900C1E671 /* RTPMessageContent.h */,
-				1A1F020422BC84E900C1E671 /* RTPMessageContent.m */,
-				1A1F020622BC865A00C1E671 /* RTPTextMessage.h */,
-				1A1F020722BC865A00C1E671 /* RTPTextMessage.m */,
 				1A1F020922BC866F00C1E671 /* RTPPathMessage.h */,
 				1A1F020A22BC866F00C1E671 /* RTPPathMessage.m */,
 				1A1F020C22BCD23100C1E671 /* RTPPaintPath.h */,
@@ -211,6 +199,7 @@
 				1A267FAA22B4D98C00EE2D6B /* LaunchScreen.storyboard in Resources */,
 				1A267FA722B4D98C00EE2D6B /* Assets.xcassets in Resources */,
 				1A267FA522B4D98B00EE2D6B /* Main.storyboard in Resources */,
+				1A519CFA22C1F32500AC13AB /* 20190625001.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,12 +215,22 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RTPScrawlProj/Pods-RTPScrawlProj-resources.sh",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCColor.plist",
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCColor.plist",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +271,6 @@
 				1A267FAD22B4D98C00EE2D6B /* main.m in Sources */,
 				1AF0549422B743AF009D4704 /* RTPMessageHandle.m in Sources */,
 				1A267F9F22B4D98B00EE2D6B /* AppDelegate.m in Sources */,
-				1A1F020522BC84E900C1E671 /* RTPMessageContent.m in Sources */,
-				1A1F020822BC865A00C1E671 /* RTPTextMessage.m in Sources */,
-				1A1F020122BC7CD200C1E671 /* RTPMessage.m in Sources */,
 				1A1F020B22BC866F00C1E671 /* RTPPathMessage.m in Sources */,
 				1AF0549122B73F10009D4704 /* RTPScrawlVC.m in Sources */,
 				1A1F020E22BCD23100C1E671 /* RTPPaintPath.m in Sources */,

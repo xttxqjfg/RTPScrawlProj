@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "RTPMessageDefine.h"
-#import "RTPMessageContent.h"
-#import "RTPMessage.h"
 
 @interface RTPMessageHandle : NSObject
 
@@ -28,7 +26,7 @@
  @param content 消息内容
  */
 - (void)sendMessage:(RTPMessageType)messageType
-                   content:(RTPMessageContent *)content;
+                   content:(NSString *)content;
 
 /**
  接收到消息
@@ -37,6 +35,6 @@
  @param content 消息内容
  */
 - (void)reciveMessage:(RTPMessageType)messageType
-            content:(RTPMessageContent *)content;
+            content:(NSString *)content;
 
 @end

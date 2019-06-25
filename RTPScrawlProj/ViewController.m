@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import <RongIMLib/RongIMLib.h>
+#import <RongIMKit/RongIMKit.h>
 #import "RTPScrawlVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -59,12 +59,12 @@
     if ([[userDic objectForKey:@"token"] length] > 0) {
         [[RCIMClient sharedRCIMClient] connectWithToken:[NSString stringWithFormat:@"%@",[userDic objectForKey:@"token"]] success:^(NSString *userId) {
             NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
-            
-            RTPScrawlVC *scrawlVC = [[RTPScrawlVC alloc]init];
-            [self presentViewController:scrawlVC animated:YES completion:^{
-                //
-            }];
-            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                RTPScrawlVC *scrawlVC = [[RTPScrawlVC alloc]init];
+                [self presentViewController:scrawlVC animated:YES completion:^{
+                    //
+                }];
+            });
         } error:^(RCConnectErrorCode status) {
             NSLog(@"登陆的错误码为:%d", status);
         } tokenIncorrect:^{

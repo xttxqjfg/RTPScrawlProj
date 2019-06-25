@@ -11,6 +11,13 @@
 @interface RTPScrawlView : UIView
 
 /**
+ 接收到的原数据绘画
+
+ @param jsonStr json数据
+ */
+- (void)drawLineWithPathData:(NSString *)jsonStr;
+
+/**
  *  清除所有轨迹
  */
 - (void)clearAllPaint;
